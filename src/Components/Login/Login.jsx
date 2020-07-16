@@ -13,7 +13,7 @@ const Login = ({ memberLogIn, adminLogIn }) => {
 		<div className="Log-in">
 			{view === 'MEMBER_LOG_IN' ? (
 				<div className="row">
-					<div className="offset-4 col-4 text-center text-white">
+					<div className="offset-4 text-center text-white">
 						<h1 className="my-5">Member Login</h1>
 						<input
 							type="text"
@@ -34,12 +34,12 @@ const Login = ({ memberLogIn, adminLogIn }) => {
 									password: event.target.value,
 								})
 							}
-							className="form-control my-2"
+							className="form-control my-5"
 							placeholder="Enter password"
 							required
 						/>
 						<button
-							className="btn btn-success form-control my-2"
+							className="btn btn-primary form-control my-2"
 							onClick={() => memberLogIn(info)}
 						>
 							Log in
